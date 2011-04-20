@@ -68,3 +68,7 @@ vmap <Leader>t :Tabularize /
 " shortcuts
 nmap <C-t> :tabnew<CR>
 "nmap <C-w> :q<CR>   " because <C-w>q will close it anyway
+
+" Map NERDTree show and hide
+map <F2> :NERDTreeToggle<CR>
+imap <F2> <Esc>:NERDTreeToggle<CR>
