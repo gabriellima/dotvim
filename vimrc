@@ -58,3 +58,8 @@ vmap <C-Down> ]egv
 " Visually select the text that was last edited/pasted (because if I cut and
 " paste it somewhere, the next simple 'gv' will select the wrong text)
 nmap gV `[v`]
+
+" Tabularize
+let mapleader=','
+nmap <Leader>t :Tabularize /
+vmap <Leader>t :Tabularize /
