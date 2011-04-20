@@ -43,3 +43,7 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+" Break lines, but doesn't spill words  (nobreak is needed so that it don't
+" spill words
+set wrap linebreak nolist
