@@ -63,3 +63,8 @@ nmap gV `[v`]
 let mapleader=','
 nmap <Leader>t :Tabularize /
 vmap <Leader>t :Tabularize /
+
+" Map tab creation and close (also for last tab) - kind like firefox browser
+" shortcuts
+nmap <C-t> :tabnew<CR>
+"nmap <C-w> :q<CR>   " because <C-w>q will close it anyway
