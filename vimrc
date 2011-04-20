@@ -47,3 +47,14 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " Break lines, but doesn't spill words  (nobreak is needed so that it don't
 " spill words
 set wrap linebreak nolist
+
+" Bubble with the help of unimpaired
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" " Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+" Visually select the text that was last edited/pasted (because if I cut and
+" paste it somewhere, the next simple 'gv' will select the wrong text)
+nmap gV `[v`]
