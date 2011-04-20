@@ -72,3 +72,13 @@ nmap <C-t> :tabnew<CR>
 " Map NERDTree show and hide
 map <F2> :NERDTreeToggle<CR>
 imap <F2> <Esc>:NERDTreeToggle<CR>
+
+" Highlight trailing whitespaces and spaces before a tab:
+:highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+" Only show up as soon as you leave insert mode, and apply to any opened
+" buffer
+autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
