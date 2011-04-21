@@ -82,3 +82,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+" Configure snipmate to use my name as author
+let g:snips_author="Gabriel L. Oliveira"
