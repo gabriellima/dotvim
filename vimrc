@@ -12,7 +12,6 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
-set textwidth=0
 "set list
 "set listchars=tab:▸-
 
@@ -49,7 +48,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " Break lines, but doesn't spill words  (nobreak is needed so that it don't
 " spill words
-"set wrap linebreak nolist
+:set showbreak=>\  wrap linebreak textwidth=0
 
 " Bubble with the help of unimpaired
 " Bubble single lines
