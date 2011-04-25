@@ -91,3 +91,7 @@ let g:snips_author="Gabriel L. Oliveira"
  map <C-j> <C-W>j
  map <C-h> <C-W>h
  map <C-l> <C-W>l
+
+" Show TaskList
+map T :TaskList<CR>
+let g:tlTokenList = ['FIXME', 'TODO', 'XXX']
