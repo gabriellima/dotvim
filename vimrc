@@ -13,6 +13,9 @@ set listchars=tab:▸\ ,nbsp:¬
 " enable the x,y position display on the status bar
 set ruler
 
+" show statusbar with 2 lines
+set laststatus=2
+
 set ignorecase
 set smartcase
 
