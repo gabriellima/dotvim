@@ -82,3 +82,9 @@ autocmd BufWinLeave * call clearmatches()
 
 " Configure snipmate to use my name as author
 let g:snips_author="Gabriel L. Oliveira"
+
+" Speed up buffer switching {{{2
+ map <C-k> <C-W>k
+ map <C-j> <C-W>j
+ map <C-h> <C-W>h
+ map <C-l> <C-W>l
