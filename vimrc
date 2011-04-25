@@ -101,3 +101,6 @@ let g:snips_author="Gabriel L. Oliveira"
 " Show TaskList
 map T :TaskList<CR>
 let g:tlTokenList = ['FIXME', 'TODO', 'XXX']
+
+" make pyflakes plugin do not use quickfix
+let g:pyflakes_use_quickfix = 0
