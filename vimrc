@@ -10,6 +10,9 @@ set smartindent
 set list
 set listchars=tab:▸\ ,nbsp:¬
 
+set ignorecase
+set smartcase
+
 " Improve the search
 set incsearch
 set hlsearch
