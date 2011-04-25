@@ -15,6 +15,14 @@ Download submodules:
 
 Download dependencies of submodules:
 
-            cd ~/.vim/bundle/pyflakes-vim
-            git submodule init
-            git submodule update
+        cd ~/.vim/bundle/pyflakes-vim
+        git submodule init
+        git submodule update
+
+External dependencies:
+
+    * nose *
+        sudo apt-get install python-nose
+        OR
+        sudo pip install nose
+
