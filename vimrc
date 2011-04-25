@@ -70,8 +70,8 @@ nmap gV `[v`]
 
 " Tabularize
 let mapleader=','
-nmap <Leader>t :Tabularize /
-vmap <Leader>t :Tabularize /
+nmap <Leader>a :Tabularize /
+vmap <Leader>a :Tabularize /
 
 " Map tab creation and close (also for last tab) - kind like firefox browser
 " shortcuts
