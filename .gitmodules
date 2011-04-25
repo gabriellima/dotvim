@@ -19,3 +19,6 @@
 [submodule "bundle/pyflakes-vim"]
 	path = bundle/pyflakes-vim
 	url = https://github.com/kevinw/pyflakes-vim.git
+[submodule "bundle/nosecompiler"]
+	path = bundle/nosecompiler
+	url = https://github.com/olethanh/Vim-nosecompiler.git
