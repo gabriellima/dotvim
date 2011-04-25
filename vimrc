@@ -12,6 +12,9 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set textwidth=0
+"set list
+"set listchars=tab:▸-
 
 " Improve the search
 set incsearch
@@ -46,7 +49,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " Break lines, but doesn't spill words  (nobreak is needed so that it don't
 " spill words
-set wrap linebreak nolist
+"set wrap linebreak nolist
 
 " Bubble with the help of unimpaired
 " Bubble single lines
