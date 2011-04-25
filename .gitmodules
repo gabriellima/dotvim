@@ -22,3 +22,6 @@
 [submodule "bundle/nosecompiler"]
 	path = bundle/nosecompiler
 	url = https://github.com/olethanh/Vim-nosecompiler.git
+[submodule "bundle/makegreen"]
+	path = bundle/makegreen
+	url = https://github.com/reinh/vim-makegreen.git
