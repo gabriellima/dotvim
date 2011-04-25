@@ -10,6 +10,9 @@ set smartindent
 set list
 set listchars=tab:▸\ ,nbsp:¬
 
+" enable the x,y position display on the status bar
+set ruler
+
 set ignorecase
 set smartcase
 
