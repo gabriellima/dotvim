@@ -39,9 +39,7 @@ Download dependencies of submodules
 External dependencies
 ---------------------
 
-1. nose
-
-::
+1. nose::
 
     sudo apt-get install python-nose
 
