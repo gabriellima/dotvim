@@ -31,3 +31,6 @@
 [submodule "bundle/pythonhelper"]
 	path = bundle/pythonhelper
 	url = https://github.com/saghul/pythonhelper.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
