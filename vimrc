@@ -112,4 +112,4 @@ let g:pyflakes_use_quickfix = 0
 set completeopt-=preview
 
 " set default colorscheme wanted
-colorscheme darkblue_modified
+colorscheme peachpuff_modified
