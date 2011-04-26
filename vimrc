@@ -110,3 +110,6 @@ let g:pyflakes_use_quickfix = 0
 
 " prevent doc pannel from showing when autocompleting
 set completeopt-=preview
+
+" set default colorscheme wanted
+colorscheme darkblue_modified
