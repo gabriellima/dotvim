@@ -105,9 +105,6 @@ let g:snips_author="Gabriel L. Oliveira"
 map T :TaskList<CR>
 let g:tlTokenList = ['FIXME', 'TODO', 'XXX']
 
-" make pyflakes plugin do not use quickfix
-let g:pyflakes_use_quickfix = 0
-
 " prevent doc pannel from showing when autocompleting
 set completeopt-=preview
 
