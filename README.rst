@@ -27,15 +27,6 @@ Download submodules
     git submodule init
     git submodule update
 
-Download dependencies of submodules
------------------------------------
-
-::
-
-    cd ~/.vim/bundle/pyflakes-vim
-    git submodule init
-    git submodule update
-
 External dependencies
 ---------------------
 
