@@ -10,6 +10,9 @@ set smartindent
 set list
 set listchars=tab:▸\ ,nbsp:¬
 
+" disable automatic backup
+set nobackup
+
 " enable the x,y position display on the status bar
 set ruler
 
