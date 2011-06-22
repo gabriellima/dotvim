@@ -9,6 +9,7 @@ set expandtab
 set smartindent
 set list
 set listchars=tab:▸\ ,nbsp:¬
+set paste
 
 " disable automatic backup
 set nobackup
