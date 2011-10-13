@@ -107,7 +107,7 @@ let g:snips_author="Gabriel L. Oliveira"
 
 " Show TaskList
 map T :TaskList<CR>
-let g:tlTokenList = ['FIXME', 'TODO', 'XXX']
+let g:tlTokenList = ['FIXME', 'TODO', 'XXX', 'IMPROVE']
 
 " prevent doc pannel from showing when autocompleting
 set completeopt-=preview
