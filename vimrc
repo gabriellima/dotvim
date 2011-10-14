@@ -38,9 +38,6 @@ if has ("autocmd")
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandta
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
-
-  " auto set nose as compiler
-  autocmd BufNewFile,BufRead *.py compiler nose
 endif
 
 " Remove trailling spaces
@@ -114,3 +111,6 @@ set completeopt-=preview
 
 " set default colorscheme wanted
 colorscheme peachpuff_modified
+
+" set F4 to toogle number/nonumber
+map <silent><F4> :set invnumber<CR>
