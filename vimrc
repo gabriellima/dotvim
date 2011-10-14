@@ -17,6 +17,7 @@ set autoindent
 "set list
 "set listchars=tab:▸\ ,nbsp:¬
 "set paste
+set mouse=a
 
 " disable automatic backup
 set nobackup
