@@ -10,8 +10,8 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
-set list
-set listchars=tab:▸\ ,nbsp:¬
+"set list
+"set listchars=tab:▸\ ,nbsp:¬
 set paste
 
 " disable automatic backup
