@@ -1,5 +1,8 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" call VAM (vim-addon-manager)
+let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
+exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
+"call vam#ActivateAddons([], {'auto_install' : 0})
+
 
 set number
 set tabstop=4
@@ -38,6 +41,13 @@ if has ("autocmd")
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandta
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
+
+  " Let VAM (vim-addon-manager) load by vim_addon_GabrielLima options
+  " InstallAddons {name} instead of ActivateAddons {name}  to review addon first
+  " ActivateInstalledAddons <Ctrl-d> autocomplete to activate installed addon
+  " UpdateAddons {name}    and   UninstallNotLoadedAddons {name}
+  call vim_addon_GabrielLima#Activate([])
+  autocmd FileType python call vim_addon_GabrielLima#Activate(['python'])
 endif
 
 " Remove trailling spaces
