@@ -51,7 +51,9 @@ if has ("autocmd")
   " ActivateInstalledAddons <Ctrl-d> autocomplete to activate installed addon
   " UpdateAddons {name}    and   UninstallNotLoadedAddons {name}
   call vim_addon_GabrielLima#Activate([])
-  autocmd FileType python call vim_addon_GabrielLima#Activate(['python'])
+  " this autocmd will let addons loading be dynamic, based on filetype
+  autocmd FileType * call vim_addon_GabrielLima#Activate([strtrans(&ft)])
+  "autocmd FileType python call vim_addon_GabrielLima#Activate(['python'])
 endif
 
 " Remove trailling spaces
