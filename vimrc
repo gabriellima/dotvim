@@ -130,3 +130,6 @@ colorscheme peachpuff_modified
 
 " set F4 to toogle number/nonumber
 map <silent><F4> :set invnumber<CR>
+
+" map copy to system clipboard
+vmap <C-c> "+y
