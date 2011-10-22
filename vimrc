@@ -138,7 +138,7 @@ vnoremap y "+y
 map <C-v> "+gP
 cmap <C-v> <C-r>+
 vnoremap <C-x> "+x
-" Use CTRL-Q to do what CTRL-V used to do
+" Use CTRL-R to do what CTRL-V used to do
 noremap <C-r> <C-v>
 " select all text with <Ctrl-a>
 nmap <C-a> ggVG
