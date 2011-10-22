@@ -1,3 +1,6 @@
+" vim power
+set nocompatible
+
 " call VAM (vim-addon-manager)
 filetype off
 let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
