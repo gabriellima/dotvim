@@ -3,6 +3,7 @@ filetype off
 let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
 exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
 "call vam#ActivateAddons([], {'auto_install' : 0})
+filetype on
 filetype plugin on
 filetype plugin indent on
 
