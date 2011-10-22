@@ -119,6 +119,10 @@ let g:snips_author="Gabriel L. Oliveira"
  map <C-h> <C-W>h
  map <C-l> <C-W>l
 
+" map <C-m> to comment
+" TODO: and re-select text
+map <C-m> :call NERDComment(0, 'invert')<cr>,gv
+
 " Show TaskList
 map T :TaskList<CR>
 let g:tlTokenList = ['FIXME', 'TODO', 'XXX', 'IMPROVE']
