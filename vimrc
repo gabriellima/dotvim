@@ -37,6 +37,9 @@ set smartcase
 set incsearch
 set hlsearch
 
+" exclude unnecessary directories and files
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+
 if has ("autocmd")
   " Enable file type detection ('filetype on').
   filetype plugin indent on
