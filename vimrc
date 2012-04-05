@@ -111,6 +111,10 @@ vmap <C-Down> ]egv
 " paste it somewhere, the next simple 'gv' will select the wrong text)
 nmap gV `[v`]
 
+" restore selection after indenting or un-indenting
+vmap < <gv
+vmap > >gv
+
 " Tabularize
 let mapleader=','
 nmap <Leader>a :Tabularize /
