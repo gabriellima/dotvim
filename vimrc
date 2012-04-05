@@ -54,14 +54,32 @@ if has ("autocmd")
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
 
-  " Let VAM (vim-addon-manager) load by vim_addon_GabrielLima options
   " InstallAddons {name} instead of ActivateAddons {name}  to review addon first
   " ActivateInstalledAddons <Ctrl-d> autocomplete to activate installed addon
   " UpdateAddons {name}    and   UninstallNotLoadedAddons {name}
-  call vim_addon_GabrielLima#Activate([])
+  "BACKUP call vim_addon_GabrielLima#Activate([])
   " this autocmd will let addons loading be dynamic, based on filetype
-  autocmd FileType * call vim_addon_GabrielLima#Activate([strtrans(&ft)])
-  "autocmd FileType python call vim_addon_GabrielLima#Activate(['python'])
+  "BACKUP autocmd FileType * call vim_addon_GabrielLima#Activate([strtrans(&ft)])
+
+  " Temporarily disabled:
+  " github:scrooloose/syntastic
+  let ft_addons = {
+    \ 'always': [ 'github:scrooloose/nerdcommenter', 'github:scrooloose/nerdtree', 'github:tpope/vim-repeat', 'github:tpope/vim-surround', 'github:tpope/vim-unimpaired', 'github:godlygeek/tabular', 'github:garbas/vim-snipmate', 'github:honza/snipmate-snippets', 'github:goatslacker/mango.vim', 'github:xolox/vim-session', 'github:kien/ctrlp.vim', 'github:croaker/mustang-vim' ],
+    \ 'python': [ 'github:vim-scripts/pythonhelper', 'python%790' ],
+    \ 'javascript': [ 'plugin-for-javascript' ]
+  \ }
+  call vam#ActivateAddons(ft_addons['always'], {'auto_install': 1})
+  au FileType * for l in values(filter(copy(ft_addons), string(expand('<amatch>')).' =~ v:key')) |
+    \ call vam#ActivateAddons(l,{'force_loading_plugins_now':1, 'auto_install': 1}) |
+  \ endfor
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
 endif
 
 " Remove trailling spaces
