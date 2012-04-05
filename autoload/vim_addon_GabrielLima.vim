@@ -13,8 +13,8 @@ fun! vim_addon_GabrielLima#Activate(vam_features)
 "  let g:local_vimrc = {'names':['vl_project.vim']}
 
   let plugins = {
-     \ 'always': [ 'github:scrooloose/nerdcommenter', 'github:scrooloose/nerdtree', 'github:tpope/vim-repeat', 'github:tpope/vim-surround', 'github:tpope/vim-unimpaired', 'github:godlygeek/tabular', 'github:garbas/vim-snipmate', 'github:honza/snipmate-snippets' ],
-      \ 'python' : [],
+     \ 'always': ['github:scrooloose/nerdcommenter', 'github:scrooloose/nerdtree', 'github:tpope/vim-repeat', 'github:tpope/vim-surround', 'github:tpope/vim-unimpaired', 'github:godlygeek/tabular', 'github:garbas/vim-snipmate', 'github:honza/snipmate-snippets', 'github:goatslacker/mango.vim', 'github:xolox/vim-session', 'github:vim-scripts/pythonhelper'],
+      \ 'python' : ['github:vim-scripts/pythonhelper'],
       \ 'javascript' : ['jsbeautify'],
       \ }
   let activate = []
