@@ -122,9 +122,16 @@ vmap > >gv
 
 " navigate with <up> and <down> through long lines
 nmap j gj
-nmap <Up> g<Up>
 nmap k gk
+nmap <Up> g<Up>
+imap <Up> g<Up>
+vmap <Up> g<Up>
 nmap <Down> g<Down>
+imap <Down> g<Down>
+vmap <Down> g<Down>
+
+" easily close tabs
+nmap <c-w> :q<cr>
 
 " Tabularize
 let mapleader=','
@@ -145,8 +152,8 @@ imap <F2> <Esc>:NERDTreeToggle<CR>
 " Highlight trailing whitespaces and spaces before a tab:
 :highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-" Only show up as soon as you leave insert mode, and apply to any opened
-" buffer
+ "Only show up as soon as you leave insert mode, and apply to any opened
+ "buffer
 autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
@@ -162,7 +169,6 @@ let g:snips_author="Gabriel L. Oliveira"
  map <C-l> <C-W>l
 
 " map <C-m> to comment
-" TODO: fix the ",gv" part to re-select text
 vmap <C-m> :call NERDComment(0, 'invert')<CR>gv
 
 " map <C-k> to clear search
