@@ -182,6 +182,9 @@ set cursorline
 " set F4 to toogle number/nonumber
 map <silent><F4> :set invnumber<CR>
 
+" set F3 to toogle paste/nopaste
+set pastetoggle=<F3>
+
 " map copy,paste,cut to system clipboard
 vnoremap <C-c> "+y
 vnoremap y "+y
