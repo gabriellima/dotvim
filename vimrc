@@ -271,3 +271,5 @@ function ToggleFold()
       normal zd
    endif
 endfunction
+
+nmap <space> :call ToggleFold()<CR>
