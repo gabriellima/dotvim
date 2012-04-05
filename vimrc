@@ -193,3 +193,9 @@ set pastetoggle=<F3>
 " map copy,paste,cut to system clipboard
 vnoremap y "+y
 " TODO: HAVE A LOOK AT: /usr/share/vim/vim72/mswin.vim
+
+" syntastic options
+" will do syntax checks when buffers are first loaded as well as on saving
+"let g:syntastic_check_on_open=1
+"let g:syntastic_quiet_warnings=1
+
