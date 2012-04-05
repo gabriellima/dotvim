@@ -171,7 +171,11 @@ let g:tlTokenList = ['FIXME', 'TODO', 'XXX', 'IMPROVE']
 set completeopt-=preview
 
 " set default colorscheme wanted
-colorscheme peachpuff_modified
+"colorscheme peachpuff_modified
+set background=dark     " you can use `dark` or `light` as your background
+syntax on
+color mango
+
 
 " set F4 to toogle number/nonumber
 map <silent><F4> :set invnumber<CR>
