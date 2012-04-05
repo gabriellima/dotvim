@@ -82,6 +82,11 @@ if has ("autocmd")
     \ endif
 endif
 
+" customizations for Ctrp-P addon
+let g:ctrlp_extensions = ['dir']
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_arg_map = 1
+
 " Remove trailling spaces
 function! <SID>StripTrailingWhitespaces()
   " Preparation: save last search, and cursor position.
