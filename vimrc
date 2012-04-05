@@ -160,6 +160,8 @@ let g:snips_author="Gabriel L. Oliveira"
 " TODO: fix the ",gv" part to re-select text
 vmap <C-m> :call NERDComment(0, 'invert')<CR>gv
 
+" map <C-k> to clear search
+nmap <silent><C-k> :nohlsearch<CR>
 
 " Show TaskList
 map T :TaskList<CR>
