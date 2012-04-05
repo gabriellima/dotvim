@@ -199,3 +199,13 @@ vnoremap y "+y
 "let g:syntastic_check_on_open=1
 "let g:syntastic_quiet_warnings=1
 
+
+" easily change directory to the file being edited and print the directory
+" after changing
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
+" options for Powerline plugin
+"let g:Powerline_symbols = 'unicode'
+"set encoding=utf-8 " Necessary to show unicode glyphs
+"set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
+
