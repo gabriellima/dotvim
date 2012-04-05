@@ -12,11 +12,11 @@ filetype plugin indent on
 
 
 set number
-set tabstop=4 "A four-space tab indent width
-set shiftwidth=4 "This allows you to use the < and > keys from VIM's visual (marking) mode to block indent/unindent regions
+set tabstop=2 "A four-space tab indent width
+set shiftwidth=2 "This allows you to use the < and > keys from VIM's visual (marking) mode to block indent/unindent regions
 set smarttab "Use the "shiftwidth" setting for inserting <TAB>s instead of the "tabstop" setting, when at the beginning of a line.
 set expandtab "Insert spaces instead of <TAB> character when the <TAB> key is pressed
-set softtabstop=4 "When pressing BACKSPACE or DELETE does the right thing and will delete four spaces (assuming 4 is your setting)
+set softtabstop=2 "When pressing BACKSPACE or DELETE does the right thing and will delete four spaces (assuming 4 is your setting)
 set autoindent
 "set list
 "set listchars=tab:▸\ ,nbsp:¬
