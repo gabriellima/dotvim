@@ -157,7 +157,9 @@ let g:snips_author="Gabriel L. Oliveira"
  map <C-l> <C-W>l
 
 " map <C-m> to comment
-map <C-m> :call NERDComment(0, 'invert')<cr>,gv
+" TODO: fix the ",gv" part to re-select text
+vmap <C-m> :call NERDComment(0, 'invert')<CR>gv
+
 
 " Show TaskList
 map T :TaskList<CR>
