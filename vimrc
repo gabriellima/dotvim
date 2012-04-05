@@ -20,8 +20,6 @@ set softtabstop=2 "When pressing BACKSPACE or DELETE does the right thing and wi
 set autoindent
 "set list
 "set listchars=tab:▸\ ,nbsp:¬
-"set paste
-set mouse=a
 
 " disable automatic backup
 set nobackup
