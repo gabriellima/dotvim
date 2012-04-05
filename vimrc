@@ -176,6 +176,8 @@ set background=dark     " you can use `dark` or `light` as your background
 syntax on
 color mango
 
+" cursor line
+set cursorline
 
 " set F4 to toogle number/nonumber
 map <silent><F4> :set invnumber<CR>
