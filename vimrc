@@ -98,7 +98,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " Break lines, but doesn't spill words  (nobreak is needed so that it don't
 " spill words
-:set showbreak=>\  wrap linebreak textwidth=0
+:set showbreak= wrap linebreak textwidth=0
 
 " Bubble with the help of unimpaired
 " Bubble single lines
