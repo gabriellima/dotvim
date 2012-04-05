@@ -115,6 +115,12 @@ nmap gV `[v`]
 vmap < <gv
 vmap > >gv
 
+" navigate with <up> and <down> through long lines
+nmap j gj
+nmap <Up> g<Up>
+nmap k gk
+nmap <Down> g<Down>
+
 " Tabularize
 let mapleader=','
 nmap <Leader>a :Tabularize /
