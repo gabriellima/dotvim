@@ -124,10 +124,10 @@ vmap > >gv
 nmap j gj
 nmap k gk
 nmap <Up> g<Up>
-imap <Up> g<Up>
+"imap <Up> g<Up>
 vmap <Up> g<Up>
 nmap <Down> g<Down>
-imap <Down> g<Down>
+"imap <Down> g<Down>
 vmap <Down> g<Down>
 
 " easily close tabs
