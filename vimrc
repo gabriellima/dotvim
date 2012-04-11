@@ -64,7 +64,7 @@ if has ("autocmd")
   " Temporarily disabled:
   " github:scrooloose/syntastic
   let ft_addons = {
-    \ 'always': [ 'github:scrooloose/nerdcommenter', 'github:scrooloose/nerdtree', 'github:tpope/vim-repeat', 'github:tpope/vim-surround', 'github:tpope/vim-unimpaired', 'github:godlygeek/tabular', 'github:garbas/vim-snipmate', 'github:honza/snipmate-snippets', 'github:goatslacker/mango.vim', 'github:xolox/vim-session', 'github:kien/ctrlp.vim', 'github:croaker/mustang-vim' ],
+    \ 'always': [ 'github:scrooloose/nerdcommenter', 'github:scrooloose/nerdtree', 'github:tpope/vim-repeat', 'github:tpope/vim-surround', 'github:tpope/vim-unimpaired', 'github:godlygeek/tabular', 'github:garbas/vim-snipmate', 'github:goatslacker/mango.vim', 'github:xolox/vim-session', 'github:kien/ctrlp.vim', 'github:croaker/mustang-vim', 'github:SirVer/ultisnips' ],
     \ 'python': [ 'github:vim-scripts/pythonhelper', 'python%790' ],
     \ 'javascript': [ 'plugin-for-javascript' ]
   \ }
