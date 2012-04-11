@@ -130,9 +130,6 @@ nmap <Down> g<Down>
 "imap <Down> g<Down>
 vmap <Down> g<Down>
 
-" easily close tabs
-nmap <c-w> :q<cr>
-
 " Tabularize
 let mapleader=','
 nmap <Leader>a :Tabularize /
